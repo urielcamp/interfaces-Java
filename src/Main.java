@@ -1,7 +1,5 @@
-import interfaces.Circulo;
-import interfaces.Cuadrado;
-import interfaces.OrdenadorNumeros;
-import interfaces.Rectangulo;
+import interfaces.*;
+
 import java.util.Arrays;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -33,6 +31,25 @@ public class Main {
 
         o.ordenarNumeros();
         System.out.println(Arrays.toString(array));
+
+        System.out.println("----------------------------------------");
+        System.out.println();
+
+        //Ejercicio 3
+
+        EmpleadoAsalariado ea = new EmpleadoAsalariado(30);
+
+        ea.calcularSalario();
+        System.out.println(ea.mostrarInformacion());
+
+        EmpleadoPorHora eh = new EmpleadoPorHora(150);
+        eh.calcularSalario();
+        System.out.println(eh.mostrarInformacion());
+
+        System.out.println("-------------------------------------");
+        System.out.println();
+
+
 
 
 
