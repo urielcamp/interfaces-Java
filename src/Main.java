@@ -49,6 +49,19 @@ public class Main {
         System.out.println("-------------------------------------");
         System.out.println();
 
+        //Ejercicio 4
+
+        MySQLConexion mySQLConexion = new MySQLConexion("Desconectada");
+
+        mySQLConexion.conectar();
+        System.out.println(mySQLConexion.consultar());
+
+        mySQLConexion.desconectar();
+        System.out.println(mySQLConexion.desconectar());
+
+        System.out.println("-------------------------------------");
+        System.out.println();
+
 
 
 
